@@ -1,0 +1,15 @@
+
+.header {
+  background-color: blue;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar {
+  padding: 10px 0px
+}
+.navbar_item {
+  color: white;
+  text-decoration: none;
+  padding: 0px 10px;
+}
