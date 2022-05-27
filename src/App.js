@@ -1,34 +1,29 @@
-import React from "react";
+// React Import
+import React, { useState , useEffect } from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+
+// Componant Imports
+import Navbar from "./components/Elements/Navbar";
+
+// Page Imports
+import Home from "./components/Pages/Home";
+import ServiceUpdate from "./components/Pages/ServiceUpdates";
+import LiveDepartures from "./components/Pages/LiveDepartures";
+
 
 function App() {
-
-  //  let [currentDate, setCurrentDate] = React.useState(undefined)
-  //  const [fishdex, setFishdex] = React.useState(undefined)
-  const [displayFish, setDisplayFish] = React.useState({});
-  
-  React.useEffect(() => {
-    async function getRandom () { 
-      const fishdex = Math.floor(Math.random() * 115);
-      const res = await fetch("https://cryptic-everglades-76066.herokuapp.com/https://www.fishwatch.gov/api/species")
-      const data = await res.json()
-      console.log(data)
-      const dailyfish = data[fishdex]
-      console.log(dailyfish)
-      setDisplayFish(dailyfish)
-      console.log(dailyfish["Species Name"])
-      localStorage.setItem("current fish", JSON.stringify(dailyfish));
-
-    }
-    getRandom()
-  }, [])
-  
-
-  return ( <h1>
-    <h2>{displayFish[Species Name]}</h2>
-    <h4>{displayFish["Population"]}</h4>
-  Hey World.
-  </h1>
-  )
-} 
+  return (
+    <>
+      <Router >
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/Live-Departures" element={<LiveDepartures />} />
+          <Route path="/Service-updates" element={<ServiceUpdate/>} />
+        </Routes>
+      </Router>
+    </>
+  );
+}
 
 export default App
