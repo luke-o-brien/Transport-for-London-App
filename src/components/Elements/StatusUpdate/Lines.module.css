@@ -1,0 +1,196 @@
+.lineontainer {
+  text-align: right;
+  width: 90vw;
+  background-color: #000000;
+}
+
+
+.line_name {
+  font-size: 18px;
+  text-align: left;
+  margin: 5px 0px 5px 5px;
+}
+
+.line_status {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: right;
+  margin: 5px 5px 5px 0px;
+}
+
+
+
+/* L I N E   S P E C I F I C   S T Y L I N G */
+.bakerloo {
+  padding: 5px 0px;
+  border-left: solid 15px #B36305;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin:5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.central {
+  padding: 5px 0px;
+  border-left: solid 15px #E32017;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin:5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+.circle {
+  padding: 5px 0px;
+  border-left: solid 15px #FFD300;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.district {
+  padding: 5px 0px;
+  border-left: solid 15px #00782A;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+.hammersmith-city{
+  padding: 5px 0px;
+  border-left: solid 15px #F3A9BB;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+.jubilee {
+  padding: 5px 0px;
+  border-left: solid 15px #A0A5A9;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+.metropolitan {
+  padding: 5px 0px;
+  border-left: solid 15px #9B0056;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+
+}
+.northern {
+  padding: 5px 0px;
+  border-left: solid 15px #000000;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.piccadilly {
+  padding: 5px 0px;
+  border-left: solid 15px #003688;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.victoria {
+  padding: 5px 0px;
+  border-left: solid 15px #0098D4;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.waterloo-city {
+  padding: 5px 0px;
+  border-left: solid 15px #95CDBA; 
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+
+}
+.dlr {
+  padding: 5px 0px;
+  border-left: solid 15px #00A4A7;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.london-overground {
+  padding: 5px 0px;
+  border-left: solid 15px #EE7C0E;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elizabeth {
+  padding: 5px 0px;
+  border-left: solid 15px #7156A5;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tram {
+  padding: 5px 0px;
+  border-left: solid 15px #84B817;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  text-align: right;
+  width: 90%;
+  margin: 5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}

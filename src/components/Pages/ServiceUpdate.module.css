@@ -1,0 +1,22 @@
+.menuListItem {
+  text-decoration: none;
+  border: solid 1px grey;
+  padding: 5px;
+  display: inline;
+  font-size: 15px;
+  width: 20%;
+}
+
+.menuList {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  font-size: 15px;
+  width: 100%;
+  margin-left: -40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buttonContainer {
+}
