@@ -1,0 +1,100 @@
+.lineontainer {
+  text-align: right;
+  width: 90vw;
+  background-color: #000000;
+}
+
+
+.line_name {
+  font-size: 18px;
+  text-align: left;
+  margin: 5px 0px 5px 5px;
+}
+
+.line_status {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: right;
+  margin: 5px 5px 5px 0px;
+}
+
+/* L I N E    S T Y L I N G */
+.city-cruises {
+  padding: 5px 0px;
+  border-left: solid 15px #E32017;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin:5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.woolwich-ferry {
+  padding: 5px 0px;
+  border-left: solid 15px #f7931d;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin:5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.rb1 {
+  padding: 5px 0px;
+  border-left: solid 15px #2d3039;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin:5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rb2 {
+  padding: 5px 0px;
+  border-left: solid 15px #0072bc;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin:5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rb4 {
+  padding: 5px 0px;
+  border-left: solid 15px #61c29d;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin:5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rb6 {
+  padding: 5px 0px;
+  border-left: solid 15px #df64b0;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin:5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thames-river-services {
+  padding: 5px 0px;
+  border-left: solid 15px #2a2e98;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin:5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+

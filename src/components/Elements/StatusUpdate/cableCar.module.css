@@ -1,0 +1,30 @@
+.lineontainer {
+  text-align: right;
+  width: 90vw;
+  background-color: #000000;
+}
+
+
+.line_name {
+  font-size: 18px;
+  text-align: left;
+  margin: 5px 0px 5px 5px;
+}
+
+.line_status {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: right;
+  margin: 5px 5px 5px 0px;
+}
+
+.emirates-air-line {
+  padding: 5px 0px;
+  border-left: solid 15px #E32017;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin:5px 2.5%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
