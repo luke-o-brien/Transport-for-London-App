@@ -4,6 +4,9 @@
   background-color: #000000;
 }
 
+.statusSeverityContainer {
+  background-color: #ffffff;
+}
 
 .line_name {
   font-size: 18px;
@@ -14,11 +17,13 @@
 .line_status {
   font-size: 15px;
   font-weight: 100;
-  text-align: right;
-  margin: 5px 5px 5px 0px;
+  text-align: left;
+  margin: 5px 5px 5px 5px;
 }
 
-
+i {
+  margin-left: 10px;
+}
 
 /* L I N E   S P E C I F I C   S T Y L I N G */
 .bakerloo {
@@ -27,9 +32,6 @@
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   width: 90%;
   margin:5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
 }
 
 .central {
@@ -38,9 +40,7 @@
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   width: 90%;
   margin:5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
+
 }
 .circle {
   padding: 5px 0px;
@@ -49,9 +49,6 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
 }
 
 .district {
@@ -61,9 +58,6 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
 }
 .hammersmith-city{
   padding: 5px 0px;
@@ -72,9 +66,6 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
 }
 .jubilee {
   padding: 5px 0px;
@@ -83,9 +74,6 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
 }
 .metropolitan {
   padding: 5px 0px;
@@ -94,10 +82,6 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-
 }
 .northern {
   padding: 5px 0px;
@@ -105,11 +89,7 @@
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
   width: 90%;
-  margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  
+  margin: 5px 2.5%;  
 }
 .piccadilly {
   padding: 5px 0px;
@@ -117,11 +97,7 @@
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
   width: 90%;
-  margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  
+  margin: 5px 2.5%;  
 }
 .victoria {
   padding: 5px 0px;
@@ -130,10 +106,6 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  
 }
 .waterloo-city {
   padding: 5px 0px;
@@ -142,10 +114,6 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-
 }
 .dlr {
   padding: 5px 0px;
@@ -154,9 +122,6 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
 }
 
 .london-overground {
@@ -166,9 +131,6 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
 }
 
 .elizabeth {
@@ -178,9 +140,6 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
 }
 
 .tram {
@@ -190,7 +149,4 @@
   text-align: right;
   width: 90%;
   margin: 5px 2.5%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
 }

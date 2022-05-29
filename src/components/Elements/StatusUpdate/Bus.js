@@ -1,8 +1,9 @@
 import React from "react";
-import styles from "./RiverLines.module.css"
+import styles from "./Bus.module.css"
 
-function RiverLines() {
-  const [lineStatus, setLineStatus] = React.useState(undefined)  
+function Bus() {
+  const [lineStatus, setLineStatus] = React.useState(undefined) 
+  const [search, setSearch] = React.useState("")
   const [isShown, setIsShown] = React.useState(false)
 
   function handleClick() {
@@ -11,7 +12,7 @@ function RiverLines() {
   
   React.useEffect(() => {
     async function GetServiceData() {
-      const response = await fetch("https://api.tfl.gov.uk/line/mode/river-bus/status/")
+      const response = await fetch("https://api.tfl.gov.uk/line/mode/bus/status/")
       const data = await response.json()
       console.log(data)
       setLineStatus(data)
@@ -19,11 +20,17 @@ function RiverLines() {
     GetServiceData()
   }, []);
 
+  function filterLines() {
+    return lineStatus.filter((line) => {
+      return line.name.includes(search.toUpperCase())
+    })
+  }
 
 
-  return (  
-    lineStatus ? lineStatus.map((line) => {
-      return <div className={styles[line.id]} key={line.id}>
+  return (  <>
+    <input className={styles.searchbar} placeholder="Enter Bus Line" value={search} onChange={(e) =>setSearch(e.target.value)} ></input>
+    {lineStatus ? filterLines().map((line) => {
+      return <div className={styles.busLine} key={line.id}>
         <h3 className={styles.line_name}>{line.name}</h3>
         {line.lineStatuses.map((status) => {
           return <div key={line.name}>
@@ -36,8 +43,9 @@ function RiverLines() {
           </div>
         })}
       </div> 
-    }) : <p>loading data</p>
+    }) : <p>Start Typing to display Stations</p>}
+  </>
   )
 }
 
-export default RiverLines
+export default Bus
