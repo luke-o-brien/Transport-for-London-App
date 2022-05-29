@@ -1,11 +1,33 @@
 .name_container{
   padding: 5px 0px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  /* box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; */
   text-align: right;
   width: 90%;
   margin: 5px 5%;
+  padding-top: 15px;
+  border-bottom: rgb(203, 203, 203) 1px solid;
 }
 
-.name_hidden {
-  border: transparent
+.resultsContainer {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-radius: 15px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.startTyping {
+  font-size: 40px;
+  margin-top: 20%;
+}
+
+.inputField {
+  width: 70%;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px black solid;
+}
+
+::placeholder {
+  padding-left: 5px;
 }
