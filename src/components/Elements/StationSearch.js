@@ -2,13 +2,11 @@ import react from "react";
 import { Link } from "react-router-dom";
 import styles from "./StationSearch.module.css"
 
-function StationSearch() {
+function StationSearch(props) {
 
   const [stationdata, setStationData] = react.useState(undefined)
   const [name, setName] = react.useState("")
   //const [title, setTitle] = useState('')
-  
-  
   
 
 
@@ -30,7 +28,7 @@ function StationSearch() {
     <div className={styles.resultsContainer}>
       {stationdata ? stationdata.map((station) => {
         return <div key={station.id}>
-          <Link to={`/Live-Departures/${station.name}`}>
+          <Link to={`/Live-Departures/${station.name}`} state={station.id}>
             {station.modes.includes("tube") || station.modes.includes("overground") || station.modes.includes("dlr") || station.modes.includes("elizabeth-line") ? 
               <div className={styles.name_container}>
                 <h3 className={styles.name}>{station.name}</h3>
