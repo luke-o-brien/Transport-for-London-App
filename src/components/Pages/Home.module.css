@@ -2,14 +2,37 @@
   text-align: center;
 }
 .navigation_div {
-  margin: 5vh 5vw;
-  height: 30vh;
+  margin: 20px 5vw;
+  height: 25vh;
   width: 90vw;
-  background-color: rgb(210, 0, 0);
+  background-color: #9B0056;
+  border-radius: 20px;
+  
+}
+.navigationDivJourney {
+  margin: 20px 5vw;
+  height: 25vh;
+  width: 90vw;
+  background-color: #00782A;
+  border-radius: 20px;
+
+}
+.navigation_title {
+  padding-top: 80px;
+  text-decoration: none;
+  color: white
+  
+
+  
+}
+.navigationDivService {
+  margin: 20px 5vw;
+  height: 25vh;
+  width: 90vw;
+  background-color: #B36305;
+  border-radius: 20px;
 }
 
-.navigation_title {
-  padding-top: 100px;
+Link {
   text-decoration: none;
-  
 }
