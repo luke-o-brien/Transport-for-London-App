@@ -20,10 +20,20 @@ const DeparturePage = (props) => {
     getStationData()
   }, []);
 
-  return (
-    <><p>Departure Page</p>
+  return ( modeData ?
+    <div>
+      <p>{modeData.commonName}</p>
       <p>{state}</p>
-    </>
+      <p>{modeData.lat}</p>
+      {modeData.additionalProperties.map((things) => {
+        return  things.key === "Lifts" || things.key === "Zone" || things.key === "WiFi" || things.key === "Toilets" ?
+        <div key={things.key} >
+          <p>{things.key}</p>
+          <p>{things.value}</p> 
+        </div> : <></>
+
+}) }
+    </div> : <p>waiting on data</p>
   )
 }
 
