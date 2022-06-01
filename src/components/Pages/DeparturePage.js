@@ -1,6 +1,7 @@
 
 import react from "react";
 import { useLocation, Link } from "react-router-dom"
+import styles from "./DeparturePage.module.css"
 
 const DeparturePage = (props) => {
 
@@ -22,19 +23,34 @@ const DeparturePage = (props) => {
 
   return ( modeData ?
     <div>
-      <p>{modeData.commonName}</p>
+      <h2 className={styles.stationName}>{modeData.commonName}</h2>
       <p>{state}</p>
-      <p>{modeData.lat}</p>
-      {modeData.additionalProperties.map((things) => {
-        return  things.key === "Lifts" || things.key === "Zone" || things.key === "WiFi" || things.key === "Toilets" ?
-        <div key={things.key} >
-          <p>{things.key}</p>
-          <p>{things.value}</p> 
-        </div> : <></>
+      {modeData.lines.map((line) => {
+        return <div key={line.id}>
+          <p>{line.name}:</p>
+        </div>
+      })}
+      <div className={styles.mapContainer}>
+        <p>{modeData.lat}</p>
+        <p>{modeData.lon}</p>
+      </div>
+      <div className={styles.facilityContainer}>
+        {modeData.additionalProperties.map((things) => {
+          return things.key === "Zone" || things.key === "WiFi" || things.key === "Toilets" ?
+            <div className={styles.facilityItem} key={things.key} >
+              <div className={styles.key}>
+                <p>{things.key}:</p>
+              </div>
+              <div className={styles.value}>
+                <p>{things.value}</p> 
+              </div>
+            </div> : <></>
 
-}) }
+}) } </div>
     </div> : <p>waiting on data</p>
   )
 }
 
 export default DeparturePage
+
+// Furniture-Deal-Sacrifice-Tailor
