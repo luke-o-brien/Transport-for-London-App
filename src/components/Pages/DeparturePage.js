@@ -21,15 +21,33 @@ const DeparturePage = (props) => {
     getStationData()
   }, []);
 
+  function handleClick(e) {
+    console.log("clicked")
+    const optionText = e.target.value
+    console.log(optionText)
+
+    async function getLiveDepartures() {
+      const resp = await fetch(`https://api.tfl.gov.uk/Line/${optionText}/Arrivals/${state}`)
+      const departureData = await resp.json()
+      const departures = departureData
+      console.log(departures)
+    }
+    getLiveDepartures()
+  }
+
   return ( modeData ?
     <div>
       <h2 className={styles.stationName}>{modeData.commonName}</h2>
       <p>{state}</p>
-      {modeData.lines.map((line) => {
-        return <div key={line.id}>
-          <p>{line.name}:</p>
-        </div>
-      })}
+      <div className={styles.availableLineContainer}>
+        {modeData.lineModeGroups.map((line) => {
+          return <>
+            {line.lineIdentifier.map((linename) => {
+              return line.modeName === "tube" ? <button value={linename} onClick={handleClick} >{linename}</button> : null
+            })}
+          </>
+        })}
+      </div>
       <div className={styles.mapContainer}>
         <p>{modeData.lat}</p>
         <p>{modeData.lon}</p>
