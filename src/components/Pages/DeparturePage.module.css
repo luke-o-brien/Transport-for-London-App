@@ -4,6 +4,21 @@
   margin: 20px 5px;
 }
 
+.availableLineContainer{
+  text-align: center;
+  display: flex;
+  justify-content:space-between;
+  width: 90%;
+  margin-left: 5%;
+}
+.availableLine {
+  display: flex;
+  border-radius: 10px;
+  border: 1px black solid;
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px;
+}
 
 .mapContainer {
   height: 20vh;
