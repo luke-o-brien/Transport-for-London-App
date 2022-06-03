@@ -32,7 +32,7 @@ function Lines() {
             {status.statusSeverity === 10 || status.statusSeverity === 20 ? 
               <p className={styles.line_status}>{status.statusSeverityDescription}</p> : <p className={styles.line_status}>{status.statusSeverityDescription}<i onClick={handleClick} className="fa-solid fa-circle-info"></i></p>}
             {/* show reason for problem unless the line is closed [status 20] as the information is given in the h3 element */}
-            {(isShown && status.statusSeverity !== 20) && <p>{status.reason}</p>}
+            {(isShown && status.statusSeverity !== 20) && <p className={styles.reason}>{status.reason}</p>}
           </div>
         })}
       </div> 

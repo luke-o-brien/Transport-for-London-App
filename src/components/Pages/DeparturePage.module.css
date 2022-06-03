@@ -20,6 +20,11 @@
   padding: 5px;
 }
 
+
+.departureContainer {
+  background-color: aqua;
+  height: 100px;
+}
 .mapContainer {
   height: 20vh;
   border: 1px black solid;
