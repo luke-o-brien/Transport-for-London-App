@@ -18,6 +18,7 @@
 .startTyping {
   font-size: 40px;
   margin-top: 20%;
+  box-shadow: none;
 }
 
 .inputField {

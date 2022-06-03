@@ -25,6 +25,11 @@ i {
   margin-left: 10px;
 }
 
+.reason {
+  text-align: left;
+  margin: 5px;
+}
+
 /* L I N E   S P E C I F I C   S T Y L I N G */
 .bakerloo {
   padding: 5px 0px;
