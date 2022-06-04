@@ -7,15 +7,14 @@ import LineDeparture from "../Elements/StatusUpdate/LiveDepartures/LineDeparture
 const DeparturePage = (props) => {
   const [show, setshow] = react.useState("show")
   const [modeData, setModeData] = react.useState(undefined)
-  const [departures, setDepartures] = react.useState(undefined)
-  const [station, setStation] = react.useState(undefined)
+  const [displayLine, setDisplayLine] = react.useState(undefined)
+  const [stationATCO, setStationATCO] = react.useState(undefined)
   const location = useLocation();
   const state = location.state;
 
   console.log(state);
     
   react.useEffect(() => {
-    setStation(state)
     async function getStationData() {
       const response = await fetch(`https://api.tfl.gov.uk/StopPoint/${state}`)
       const data = await response.json()
@@ -32,34 +31,27 @@ const DeparturePage = (props) => {
     const optionText = e.target.innerHTML
     const optionValue = e.target.value
     console.log(optionValue)
+    setStationATCO(optionValue)
     console.log(optionText)
+    setDisplayLine(optionText)
     setshow(optionText)
-    console.log(show)
-
-    async function getLiveDepartures() {
-      const resp = await fetch(`https://api.tfl.gov.uk/Line/${optionText}/Arrivals/${optionValue}`)
-      const departureData = await resp.json()
-      const departure = departureData
-      setDepartures(departure)
-    }
-    getLiveDepartures()
   }
 
   return ( modeData ?
     <div>
-      <h2 className={styles.stationName}>{modeData.commonName}</h2>
+      <h2 className={styles.stationName}>{(modeData.commonName).replace("Underground Station", "")}</h2>
       <div className={styles.availableLineContainer}>
         {modeData.lineGroup.map((line) => {
-          return <>
+          return <div key={line.lineIdentifier}>
             {line.lineIdentifier.map((linename) => {
               return linename === "bakerloo" || linename === "central" || linename === "circle" || linename === "district" || linename === "hammersmith-city" || linename === "jubilee" || linename === "metropolitan" || linename === "northern" || linename === "piccadilly" || linename === "victoria" ? 
-                <button value={line.stationAtcoCode} onClick={handleClick} >{linename}</button> : null
+                <button className={styles.lineButton} key={line.stationAtcoCode} value={line.stationAtcoCode} onClick={handleClick} >{linename}</button> : null
             })}
-          </>
+          </div>
         })}
       </div>
       <div>
-        <LineDeparture data={departures} state={station}/>
+        <LineDeparture  line={displayLine} atco={stationATCO}/>
       </div>
       <div className={styles.mapContainer}>
         <p>{modeData.lat}</p>
