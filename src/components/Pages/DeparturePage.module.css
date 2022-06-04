@@ -20,7 +20,14 @@
   padding: 5px;
 }
 
-
+.lineButton {
+  text-decoration: none;
+  border: solid 1px grey;
+  padding: 5px;
+  margin: 5px;
+  background: none;
+  font-size: 15px;
+}
 .departureContainer {
   background-color: aqua;
   height: 100px;

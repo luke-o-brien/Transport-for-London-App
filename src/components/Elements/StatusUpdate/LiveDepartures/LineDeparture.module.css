@@ -1,0 +1,38 @@
+.serviceDiv {
+  background-color: transparent;
+  border-bottom: 1px rgb(217, 217, 217) solid;
+  width: 95%;
+  margin-left: 2.5%;
+  
+}
+
+.lineTitle {
+  font-size: 30px;
+  border-bottom: 1px rgb( 217, 217, 217) solid;
+  width: 95%;
+  margin-left: 2.5%;
+  padding: 10px 0px;
+}
+.bakerloo {
+  border-top: 25px solid #B36305;
+  width: 90vw;
+  margin: 20px 5vw;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.central {
+  border-top: solid 25px #E32017;
+  width: 90vw;
+  margin: 20px 5vw;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.victoria {
+  border-top: solid 25px #0098D4;
+  width: 90vw;
+  margin: 20px 5vw;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
