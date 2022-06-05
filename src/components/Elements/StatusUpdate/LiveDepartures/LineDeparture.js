@@ -35,8 +35,8 @@ const LineDeparture = (props) => {
     departures ? 
       <div className={styles[line]}>
         { line === "dlr" ? <h3 className={styles.lineTitle}>{(line).toUpperCase()}</h3> : <h3 className={styles.lineTitle} >{(line).charAt(0).toUpperCase() + line.slice(1)}</h3>}
-        {departures.slice(0, 5).map((service) => {
-          return <div key={service.id} className={styles.serviceDiv} >
+        {departures.slice(0, 5).map((service, pos) => {
+          return <div key={pos} className={styles.serviceDiv} >
             { line === "dlr" ? <p>{service.destinationName}</p> : <p>{service.towards} </p>}
             <p>{Math.floor(service.timeToStation / 60)} Mins</p>
           </div>
