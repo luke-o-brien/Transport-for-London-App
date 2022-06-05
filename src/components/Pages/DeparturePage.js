@@ -20,7 +20,9 @@ const DeparturePage = (props) => {
       const data = await response.json()
       const _modeData = data
       console.log(data)
+      console.dir(data)
       setModeData(_modeData)
+      console.log(data.lineGroup.lineIdentifier)
     }
     getStationData()
   }, []);
@@ -44,7 +46,7 @@ const DeparturePage = (props) => {
         {modeData.lineGroup.map((line) => {
           return <div key={line.lineIdentifier}>
             {line.lineIdentifier.map((linename) => {
-              return linename === "bakerloo" || linename === "central" || linename === "circle" || linename === "district" || linename === "hammersmith-city" || linename === "jubilee" || linename === "metropolitan" || linename === "northern" || linename === "piccadilly" || linename === "victoria" ? 
+              return linename === "bakerloo" || linename === "central" || linename === "circle" || linename === "district" || linename === "hammersmith-city" || linename === "jubilee" || linename === "metropolitan" || linename === "northern" || linename === "piccadilly" || linename === "victoria" || linename === "dlr" || linename === "overground" ? 
                 <button className={styles.lineButton} key={line.stationAtcoCode} value={line.stationAtcoCode} onClick={handleClick} >{linename}</button> : null
             })}
           </div>
