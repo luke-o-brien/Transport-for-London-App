@@ -34,15 +34,16 @@
 }
 .mapContainer {
   height: 20vh;
-  border: 1px black solid;
+  /* border: 1px black solid; */
   width: 95vw;
   margin-left: 2.5vw;
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
 /* F A C I L I T Y    S E C T I O N */
 .facilityContainer {
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   border-radius: 15px;
   width: 90%;
   margin: 10px;

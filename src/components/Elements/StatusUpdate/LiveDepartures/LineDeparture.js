@@ -13,20 +13,19 @@ const LineDeparture = (props) => {
   console.log(station)
   console.log(line)
 
-  const capitalizeFirst = str => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  };
 
   react.useEffect(() => {
     async function getLiveDepartures() {
       if (line === null) {
         console.log("no params")
-      } else if (line === "bakerloo" || line === "central" || line === "victoria" || line === "jubilee") {
+      } else if (line === "bakerloo" || line === "central" || line === "victoria" || line === "jubilee" || line === "district" || line === "circle" || line === "metropolitan" || line === "northern" || line === "piccadilly" || line === "hammersmith-city" || line === "dlr" || line === "overground") {
         const resp = await fetch(`https://api.tfl.gov.uk/Line/${line}/Arrivals/${station}`)
         const departureData = await resp.json()
         const departure = departureData
-        console.log(departure)
-        setDepartures(departure)
+        const sortProperty = "timeToStation";
+        const sorted = departure.sort((a, b) => a[sortProperty] -  b[sortProperty]);
+        console.log(sorted)
+        setDepartures(sorted)
       }  
     }
     getLiveDepartures()
@@ -35,12 +34,11 @@ const LineDeparture = (props) => {
   return ( 
     departures ? 
       <div className={styles[line]}>
-        <h3 className={styles.lineTitle} >{capitalizeFirst(line)}</h3>
-        {departures.map((line) => {
-          return <div key={line.vehicleId} className={styles.serviceDiv} >
-            <p>{line.platformName}</p>
-            <p>{(line.destinationName).replace("Underground Station", "")} </p>
-            <p>{Math.floor(line.timeToStation / 60)} Mins</p>
+        { line === "dlr" ? <h3 className={styles.lineTitle}>{(line).toUpperCase()}</h3> : <h3 className={styles.lineTitle} >{(line).charAt(0).toUpperCase() + line.slice(1)}</h3>}
+        {departures.slice(0, 5).map((service, pos) => {
+          return <div key={pos} className={styles.serviceDiv} >
+            { line === "dlr" ? <p>{service.destinationName}</p> : <p>{service.towards} </p>}
+            <p>{Math.floor(service.timeToStation / 60)} Mins</p>
           </div>
         })} : <></>
       </div> : null 
