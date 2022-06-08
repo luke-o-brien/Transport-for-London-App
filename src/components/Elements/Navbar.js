@@ -17,6 +17,9 @@ function Navbar () {
         <Link to="/Service-updates" className={styles.navbar_item}>
           Service Updates
         </Link>
+        <Link to="/Journey-planner" className={styles.navbar_item}>
+          Journey Planner
+        </Link>
       </nav>
     </header>
   )

@@ -3,22 +3,27 @@
 }
 .navigation_div {
   margin: 20px 5vw;
-  height: 25vh;
+  height: 15vh;
   width: 90vw;
   background-color: #84B817;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 .navigationDivJourney {
   margin: 20px 5vw;
-  height: 25vh;
+  height: 15vh;
   width: 90vw;
   background-color: #df64b0;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .navigation_title {
-  padding-top: 80px;
   text-decoration: none;
   color: white
   
@@ -27,10 +32,13 @@
 }
 .navigationDivService {
   margin: 20px 5vw;
-  height: 25vh;
+  height: 15vh;
   width: 90vw;
   background-color: #EE7C0E;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 Link {

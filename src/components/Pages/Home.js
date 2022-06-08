@@ -15,10 +15,11 @@ function Home() {
           <h2 className={styles.navigation_title}>Live Departure Boards</h2>
         </div>
       </Link>
-      <div className={styles.navigationDivJourney} style={{ textDecoration: "none" }}>
-        <h2 className={styles.navigation_title}>Journey Planner</h2>
-      </div>
-
+      <Link to="/Journey-planner" style={{ textDecoration: "none"}}>
+        <div className={styles.navigationDivJourney} style={{ textDecoration: "none" }}>
+          <h2 className={styles.navigation_title}>Journey Planner</h2>
+        </div>
+      </Link>
     </>
   );
 }

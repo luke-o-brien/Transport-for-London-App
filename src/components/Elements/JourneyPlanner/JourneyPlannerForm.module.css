@@ -1,0 +1,39 @@
+.form {
+  padding: 15px 0px;
+  border-radius: 10px;
+  width: 90vw;
+  margin: 10px 5vw;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.TextInput {
+  width: 90%;
+  height: 20px;
+  border-radius: 5px;
+  border: black 1px solid;
+}
+
+.stationSuggestions {
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.Suggestion {
+  font-size: 15px;
+  font-weight: 200;
+  padding: 5px 5px;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+}
+
+.suggestionContainer {
+  border-bottom: 1px solid grey;
+  width: 95%;
+  margin-left: 2.5%;
+  padding: 5px 0px;
+
+}
