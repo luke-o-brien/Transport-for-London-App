@@ -8,6 +8,7 @@ function JourneyPlannerForm() {
   const [stationdata, setStationData] = react.useState(undefined)
   const [name, setName] = react.useState("")
   const [orgin, setOrigin] = react.useState("")
+  const [showSuggestions, setShowSuggestions] = react.useState(false);
 
   async function getStationId(e) {
     const _name = e.target.value
@@ -17,6 +18,8 @@ function JourneyPlannerForm() {
     const data = await response.json()
     setStationData(data.matches)
     console.log(stationdata)
+    setShowSuggestions(true)
+    console.log(showSuggestions)
   }
 
   function handleclick(e) {
@@ -29,8 +32,8 @@ function JourneyPlannerForm() {
     const field = document.getElementById("start") 
     field.value = text
     setName(text)
-    
-
+    setShowSuggestions(false)
+    console.log(showSuggestions)
   }
 
   function submit(e) {
@@ -46,9 +49,9 @@ function JourneyPlannerForm() {
       <label>
         <input id="start" className={styles.TextInput} onChange={ getStationId } value={name} placeholder="eltham"></input>
       </label>
-      <div className={styles.stationSuggestions}>
-        {stationdata ? stationdata.slice(0, 5).map((station) => {
-          return <div key={station.id}>
+      <div id="suggestions" className={styles.stationSuggestions}>
+        {stationdata && showSuggestions ? stationdata.slice(0, 5).map((station) => {
+          return <div id="suggest" key={station.id}>
             {station.modes.includes("tube") || station.modes.includes("dlr") || station.modes.includes("elizabeth-line") || station.modes.includes("national-rail") ? 
               <div className={styles.suggestionContainer}>
                 <button value={station.icsId} onClick={ handleclick } className={styles.Suggestion}>{(station.name).replace("Underground Station", "")}</button>
