@@ -1,0 +1,22 @@
+.ResultsDiv {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.LegContainer {
+  border: 1px black solid;
+  margin: 10px 0px;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.details {
+  text-align: left;
+}
+
+.stops {
+  text-align: left;
+  font-size: 10px;
+  margin-left: 10px;
+}

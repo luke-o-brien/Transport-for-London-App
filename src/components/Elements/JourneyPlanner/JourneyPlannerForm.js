@@ -49,7 +49,6 @@ function JourneyPlannerForm() {
   }
 
   return (<>
-    <p>form</p>
     <form className={styles.form}>
       <label>
         <input id="start" className={styles.TextInput} onChange={ getStationId } value={name} placeholder="eltham"></input>
