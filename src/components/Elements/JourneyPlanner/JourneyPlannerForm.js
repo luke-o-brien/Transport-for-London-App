@@ -1,6 +1,7 @@
 import react from "react"
 import { createRoutesFromChildren } from "react-router-dom"
 import styles from "./JourneyPlannerForm.module.css"
+import JourneyResults from "./JourneyPlannerResults"
 
 function JourneyPlannerForm() {
 
@@ -9,6 +10,7 @@ function JourneyPlannerForm() {
   const [name, setName] = react.useState("")
   const [orgin, setOrigin] = react.useState("")
   const [showSuggestions, setShowSuggestions] = react.useState(false);
+  const [results, setresults] = react.useState(false)
 
   async function getStationId(e) {
     const _name = e.target.value
@@ -20,6 +22,7 @@ function JourneyPlannerForm() {
     console.log(stationdata)
     setShowSuggestions(true)
     console.log(showSuggestions)
+    setresults(false)
   }
 
   function handleclick(e) {
@@ -34,6 +37,7 @@ function JourneyPlannerForm() {
     setName(text)
     setShowSuggestions(false)
     console.log(showSuggestions)
+
   }
 
   function submit(e) {
@@ -41,10 +45,10 @@ function JourneyPlannerForm() {
     console.log("submited");
     //const start = 
     console.log(`the submitted origin is ${orgin}`)
+    setresults(true)
   }
 
   return (<>
-    <p>form</p>
     <form className={styles.form}>
       <label>
         <input id="start" className={styles.TextInput} onChange={ getStationId } value={name} placeholder="eltham"></input>
@@ -61,6 +65,10 @@ function JourneyPlannerForm() {
       </div>
       <input onClick={submit} type="submit"></input>
     </form>
+    {results ?
+      <div>
+        <JourneyResults origin={orgin} />
+      </div> : null}
   </>
   )
 }

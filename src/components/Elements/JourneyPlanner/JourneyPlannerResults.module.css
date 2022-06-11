@@ -1,0 +1,188 @@
+.ResultsDiv {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+.LegContainer {
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+.details {
+  text-align: left;
+}
+
+.stops {
+  text-align: left;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.detailsDepArr {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 5px;
+}
+
+
+
+.walking {
+  width: 95%;
+  margin-left: 2.5%;
+  border-left: rgb(72, 72, 72) solid 10px;
+}
+
+.back {
+  width: 95%;
+  margin-left: 2.5%;
+  text-align: left;
+  transition: 0.25s linear;
+}
+/* TFL Lines and Modes Class styles */
+.bus {
+  border-left: rgb(255, 0, 0) solid 10px;
+}
+
+.Bakerloo {
+  border-left: solid 10px #B36305;
+}
+
+.Central {
+  border-left: solid 10px #E32017;
+}
+.Circle {
+  border-left: solid 10px #FFD300;
+}
+
+.District {
+  border-left: solid 10px #00782A;
+}
+.Hammersmith-city{
+  border-left: solid 10px #F3A9BB;
+}
+.Jubilee {
+  border-left: solid 10px #A0A5A9;
+}
+.Metropolitan {
+  border-left: solid 10px #9B0056;
+}
+.Northern {
+  border-left: solid 10px #000000;
+}
+.Piccadilly {
+  border-left: solid 10px #003688;
+}
+.Victoria {
+  border-left: solid 10px #0098D4;
+}
+.Waterloo-city {
+
+  border-left: solid 10px #95CDBA; 
+}
+.Dlr {
+
+  border-left: solid 10px #00A4A7;
+}
+
+.London-Overground {
+  border-left: solid 10px #EE7C0E;
+}
+
+.Elizabeth {
+  border-left: solid 10px #7156A5;
+}
+
+.Tram {
+  border-left: solid 10px #84B817;
+}
+
+
+
+.legDetailsContainer {
+  padding: 20px 0px 20px 5px;
+  margin: 5px 0px;
+}
+/* National Rail Train Company Class styles  */
+.Thameslink {
+  border-left: #ff5aa4 solid 10px;
+}
+
+.Southeastern {
+  border-left: #389cff solid 10px;
+}
+
+.South-Western-Railway {
+  border-left: #24398c solid 10px;
+}
+
+.Southern {
+  border-left: #8cc63e solid 10px;
+} 
+
+.Greater-Anglia {
+  border-left: #d70428 solid 10px;
+}
+
+.Lumo {
+  border-left: #2b6ef5 solid 10px;
+}
+
+.Great-Western-Railway {
+  border-left: #0a493e solid 10px;
+}
+
+.Hull-Trains {
+  border-left: #de005c solid 10px;
+}
+
+.ScotRail {
+  border-left: #1c4074 solid 10px;
+}
+
+.London-North-Eastern-Railway {
+  border-left: #ce0e2d solid 10px;
+}
+
+.Chiltern-Railways {
+  border-left: #00bfff solid 10px;
+}
+
+.West-Midlands-Trains {
+  border-left: #ff8200 solid 10px;
+}
+
+.Transport-for-Wales {
+  border-left: #ff4500 solid 10px;
+}
+
+.coach {
+  border-left: #ffee00 solid 10px;
+}
+
+.Cross-Country {
+  border-left: #660f21 solid 10px;
+}
+
+.East-Midlands-Railway {
+  border-left: #703e69 solid 10px;
+}
+
+.Northern-Rail {
+  border-left: #0f0d78 solid 10px;
+}
+
+.Avanti-West-Coast{
+  border-left: #004354 solid 10px;
+}
+
+.London-NorthWestern-Railway {
+  border-left: #00bf6f solid 10px;
+}
+
+.Transpennine-Express {
+  border-left: #09a4ec solid 10px;
+}

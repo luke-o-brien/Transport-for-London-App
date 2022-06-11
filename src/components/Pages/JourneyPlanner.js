@@ -20,7 +20,7 @@ function JourneyPlanner() {
 
 
   return ( <>
-    <p>journey planner page</p>
+    <p>Plan your Journey</p>
     <JourneyPlannerForm />
   </>
   )
