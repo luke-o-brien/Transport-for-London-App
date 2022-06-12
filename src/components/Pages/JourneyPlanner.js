@@ -1,6 +1,7 @@
 import react from "react";
 import { useState } from "react/cjs/react.production.min";
 import JourneyPlannerForm from "../Elements/JourneyPlanner/JourneyPlannerForm";
+import styles from "./JourneyPlanner.module.css"
 
 function JourneyPlanner() {
 
@@ -20,7 +21,7 @@ function JourneyPlanner() {
 
 
   return ( <>
-    <p>Plan your Journey</p>
+    <h2 className={styles.JPtitle}>Plan your Journey</h2>
     <JourneyPlannerForm />
   </>
   )
