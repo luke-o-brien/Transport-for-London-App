@@ -1,7 +1,22 @@
 * {
   text-align: center;
+  overflow-x: hidden;
 }
 
+
+.background {
+  background-image: url("../images/signage-2653_1280.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+
+}
+
+.homeContent {
+  margin-top: 20%;
+}
 .mainTtle {
   margin: 10px 0px 0px 2.5%;
   font-size: 35px;

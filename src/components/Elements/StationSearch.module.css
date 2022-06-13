@@ -1,10 +1,10 @@
 .name_container{
   padding: 5px 0px;
   text-align: right;
-  width: 90%;
-  margin: 5px 5%;
+  width: 96%;
+  margin: 5px 2%;
   padding-top: 15px;
-  border-bottom: rgb(203, 203, 203) 1px solid;
+  border-bottom: rgb(192, 192, 192) 0.5px solid;
 }
 .name {
   font-weight: 100;
