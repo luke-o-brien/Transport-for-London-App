@@ -1,7 +1,8 @@
 
 .stationName {
-  font-size: 35px;
-  margin: 20px 5px;
+  margin: 10px 0px 10px 2.5%;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 .availableLineContainer{

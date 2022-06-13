@@ -44,12 +44,12 @@ const DeparturePage = (props) => {
       <h2 className={styles.stationName}>{(modeData.commonName).replace("Underground Station", "")}</h2>
       <div className={styles.availableLineContainer}>
         {modeData.lineGroup.map((line) => {
-          return <div key={line.lineIdentifier}>
-            {line.lineIdentifier.map((linename) => {
-              return linename === "bakerloo" || linename === "central" || linename === "circle" || linename === "district" || linename === "hammersmith-city" || linename === "jubilee" || linename === "metropolitan" || linename === "northern" || linename === "piccadilly" || linename === "victoria" || linename === "dlr" || linename === "overground" ? 
-                <button className={styles.lineButton} key={line.stationAtcoCode} value={line.stationAtcoCode} onClick={handleClick} >{linename}</button> : null
-            })}
-          </div>
+          return line.lineIdentifier.map((linename) => {
+            return linename === "bakerloo" || linename === "central" || linename === "circle" || linename === "district" || linename === "hammersmith-city" || linename === "jubilee" || linename === "metropolitan" || linename === "northern" || linename === "piccadilly" || linename === "victoria" || linename === "dlr" || linename === "overground" ? 
+              <div key={line.stationAtcoCode}>
+                <button className={styles.lineButton} value={line.stationAtcoCode} onClick={handleClick} >{linename}</button> 
+              </div> : null
+          })
         })}
       </div>
       <div>

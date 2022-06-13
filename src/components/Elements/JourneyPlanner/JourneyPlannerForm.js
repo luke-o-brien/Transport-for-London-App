@@ -89,11 +89,11 @@ function JourneyPlannerForm() {
   }
 
   return (<>
-    <form className={styles.form}>
+    <form onSubmit={submit} className={styles.form}>
       <div className={styles.formContent}>
         <div className={styles.formTextFields}>
           <label>
-            <input id="start" className={styles.TextInput} onChange={ getOriginId } value={OriginName} placeholder="Where from?"></input>
+            <input id="start" required className={styles.TextInput} onChange={ getOriginId } value={OriginName} placeholder="Where from?"></input>
           </label>
           <div id="suggestions" className={styles.stationSuggestions}>
             {originStationdata && showOriginSuggestions ? originStationdata.slice(0, 5).map((station) => {
@@ -106,7 +106,7 @@ function JourneyPlannerForm() {
             }) : null}  
           </div>
           <label>
-            <input id="start" className={styles.TextInput} onChange={ getDestId} value={destName} placeholder="Where to?"></input>
+            <input id="start"  required className={styles.TextInput} onChange={ getDestId} value={destName} placeholder="Where to?"></input>
           </label>
           <div id="suggestions" className={styles.stationSuggestions}>
             {destStationdata && showDestSuggestions ? destStationdata.slice(0, 5).map((station) => {
@@ -120,8 +120,8 @@ function JourneyPlannerForm() {
           </div>
         </div>
         <div className={styles.Formboxes}>
-          <input className={styles.timeInput} type="time" id="time" onChange={getTime}></input>
-          <input className={styles.submit} onClick={submit} type="submit"></input>
+          <input required className={styles.timeInput} type="time" id="time" onChange={getTime}></input>
+          <input className={styles.submit} type="submit"></input>
         </div>
       </div>
     </form>

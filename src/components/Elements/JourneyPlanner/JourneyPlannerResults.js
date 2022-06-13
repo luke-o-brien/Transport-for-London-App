@@ -40,7 +40,7 @@ function JourneyResults(props) {
             <p>{journey.startDateTime.split("T")[1].split(":").slice(0,-1).join(":")} - {journey.arrivalDateTime.split("T")[1].split(":").slice(0,-1).join(":")}</p>
             {(journey.duration > 60) ? <p>{Math.floor(journey.duration / 60)} hr {journey.duration % 60} Mins</p> : <p>( {journey.duration} min )</p>}
           </div>
-          <a className={styles.routeDetailsButton} onClick={showRouteDetails} >View Route Details<i class="fa-solid fa-angle-down"></i></a>
+          <a className={styles.routeDetailsButton} onClick={showRouteDetails} >View Route Details<i className="fa-solid fa-angle-down"></i></a>
         </div>
         
         { showRouteDetail && journey.legs.map((legs, pos) => {
@@ -54,7 +54,7 @@ function JourneyResults(props) {
                 <p className={styles.details}>{legs.routeOptions[0].directions}</p>
                 <p className={styles.details}>{legs.duration} Min</p>
               </div>
-              {legs.path.stopPoints.length > 1 ? <a className={styles.details} onClick={showStops}>View Stops<i class="fa-solid fa-angle-down"></i></a>  : null}
+              {legs.path.stopPoints.length > 1 ? <a className={styles.details} onClick={showStops}>View Stops<i className="fa-solid fa-angle-down"></i></a>  : null}
               {showStopPoints ? legs.path.stopPoints.slice(0,-1).map((stops) => {
                 return <p className={styles.stops} key={stops.name}>{stops.name}</p>
               }) : null}

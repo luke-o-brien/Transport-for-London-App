@@ -28,7 +28,7 @@ function StationSearch(props) {
     <div className={styles.resultsContainer}>
       {stationdata ? stationdata.map((station) => {
         return <div key={station.id}>
-          <Link to={`/Live-Departures/${station.name}`} state={station.id}>
+          <Link to={`/Live-Departures/${station.name}`} state={station.id} style={{ textDecoration: "none" }}>
             {station.modes.includes("tube") || station.modes.includes("dlr") || station.modes.includes("elizabeth-line")  ? 
               <div className={styles.name_container}>
                 <h3 className={styles.name}>{(station.name).replace("Underground Station", "")}</h3>

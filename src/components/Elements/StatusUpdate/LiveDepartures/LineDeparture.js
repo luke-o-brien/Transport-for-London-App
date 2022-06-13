@@ -40,8 +40,8 @@ const LineDeparture = (props) => {
             { line === "dlr" ? <p>{service.destinationName}</p> : <p>{service.towards} </p>}
             <p>{Math.floor(service.timeToStation / 60)} Mins</p>
           </div>
-        })} : <></>
-      </div> : null 
+        })} 
+      </div> : null
   )
 
 }
