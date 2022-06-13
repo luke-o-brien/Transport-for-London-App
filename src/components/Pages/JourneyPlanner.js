@@ -1,5 +1,3 @@
-import react from "react";
-import { useState } from "react/cjs/react.production.min";
 import JourneyPlannerForm from "../Elements/JourneyPlanner/JourneyPlannerForm";
 import styles from "./JourneyPlanner.module.css"
 

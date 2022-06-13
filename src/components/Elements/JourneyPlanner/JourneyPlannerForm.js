@@ -1,5 +1,4 @@
 import react from "react"
-import { createRoutesFromChildren } from "react-router-dom"
 import styles from "./JourneyPlannerForm.module.css"
 import JourneyResults from "./JourneyPlannerResults"
 
