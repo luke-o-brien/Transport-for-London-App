@@ -1,10 +1,10 @@
 
 import react from "react";
-import { useLocation, Link } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import styles from "./DeparturePage.module.css"
 import LineDeparture from "../Elements/StatusUpdate/LiveDepartures/LineDeparture.js";
 
-const DeparturePage = (props) => {
+const DeparturePage = () => {
   const [show, setshow] = react.useState("show")
   const [modeData, setModeData] = react.useState(undefined)
   const [displayLine, setDisplayLine] = react.useState(undefined)
@@ -37,6 +37,7 @@ const DeparturePage = (props) => {
     console.log(optionText)
     setDisplayLine(optionText)
     setshow(optionText)
+    console.log(show)
   }
 
   return ( modeData ?
@@ -44,21 +45,20 @@ const DeparturePage = (props) => {
       <h2 className={styles.stationName}>{(modeData.commonName).replace("Underground Station", "")}</h2>
       <div className={styles.availableLineContainer}>
         {modeData.lineGroup.map((line) => {
-          return <div key={line.lineIdentifier}>
-            {line.lineIdentifier.map((linename) => {
-              return linename === "bakerloo" || linename === "central" || linename === "circle" || linename === "district" || linename === "hammersmith-city" || linename === "jubilee" || linename === "metropolitan" || linename === "northern" || linename === "piccadilly" || linename === "victoria" || linename === "dlr" || linename === "overground" ? 
-                <button className={styles.lineButton} key={line.stationAtcoCode} value={line.stationAtcoCode} onClick={handleClick} >{linename}</button> : null
-            })}
-          </div>
+          return line.lineIdentifier.map((linename) => {
+            return linename === "bakerloo" || linename === "central" || linename === "circle" || linename === "district" || linename === "hammersmith-city" || linename === "jubilee" || linename === "metropolitan" || linename === "northern" || linename === "piccadilly" || linename === "victoria" || linename === "dlr" || linename === "overground" ? 
+              <button key={line.stationAtcoCode} className={styles.availableLine} value={line.stationAtcoCode} onClick={handleClick} >{linename}</button> 
+              : null
+          })
         })}
       </div>
       <div>
         <LineDeparture  line={displayLine} atco={stationATCO}/>
       </div>
-      <div className={styles.mapContainer}>
+      {/* <div className={styles.mapContainer}>
         <p>{modeData.lat}</p>
         <p>{modeData.lon}</p>
-      </div>
+      </div> */}
       <div className={styles.facilityContainer}>
         {modeData.additionalProperties.map((things) => {
           return things.key === "Zone" || things.key === "WiFi" || things.key === "Toilets" ?

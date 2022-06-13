@@ -14,6 +14,7 @@
   margin: 5px 0px 5px 5px;
 }
 
+
 .line_status {
   font-size: 15px;
   font-weight: 100;
@@ -35,16 +36,16 @@ i {
   padding: 5px 0px;
   border-left: solid 15px #B36305;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-  width: 90%;
-  margin:5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 
 .central {
   padding: 5px 0px;
   border-left: solid 15px #E32017;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-  width: 90%;
-  margin:5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 
 }
 .circle {
@@ -52,8 +53,8 @@ i {
   border-left: solid 15px #FFD300;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 
 .district {
@@ -61,72 +62,72 @@ i {
   border-left: solid 15px #00782A;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 .hammersmith-city{
   padding: 5px 0px;
   border-left: solid 15px #F3A9BB;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 .jubilee {
   padding: 5px 0px;
   border-left: solid 15px #A0A5A9;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 .metropolitan {
   padding: 5px 0px;
   border-left: solid 15px #9B0056;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 .northern {
   padding: 5px 0px;
   border-left: solid 15px #000000;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;  
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 .piccadilly {
   padding: 5px 0px;
   border-left: solid 15px #003688;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;  
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 .victoria {
   padding: 5px 0px;
   border-left: solid 15px #0098D4;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 .waterloo-city {
   padding: 5px 0px;
   border-left: solid 15px #95CDBA; 
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 .dlr {
   padding: 5px 0px;
   border-left: solid 15px #00A4A7;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 
 .london-overground {
@@ -134,8 +135,8 @@ i {
   border-left: solid 15px #EE7C0E;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 
 .elizabeth {
@@ -143,8 +144,8 @@ i {
   border-left: solid 15px #7156A5;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }
 
 .tram {
@@ -152,6 +153,6 @@ i {
   border-left: solid 15px #84B817;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   text-align: right;
-  width: 90%;
-  margin: 5px 2.5%;
+  width: 93%;
+  margin: 5px 0% 5px 4%;
 }

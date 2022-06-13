@@ -1,16 +1,64 @@
+/* F O R M   S T Y L I N G */
+
 .form {
-  padding: 15px 0px;
-  border-radius: 10px;
-  width: 90vw;
-  margin: 10px 5vw;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  padding: 10px 0px;
 }
 
+.formContent {
+  margin: 1px;
+}
+
+.formTextFields {
+  width: 100%;
+
+}
+
+.Formboxes {
+  display: flex;
+  justify-content: center;
+  vertical-align: top;
+  /* background-color: yellow; */
+}
+
+/* IMPUT FIELDS STYLING */
+
 .TextInput {
-  width: 90%;
-  height: 20px;
-  border-radius: 5px;
-  border: black 1px solid;
+  width: 95%;
+  border: #2B2B2C 1px solid;
+  height: 50px;
+  margin: 2px 0px;
+  padding-left: 5px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.TextInput::placeholder {
+  text-align: left;
+  color: #2B2B2C;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.timeInput {
+  vertical-align: top;
+  height: 50px;
+  width: 46%;
+  border: 1px #2B2B2C solid;
+  margin: 2px 1.5%;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.submit {
+  vertical-align: top;
+  height: 50px;
+  width: 46%;
+  border: none;
+  font-size: 20px;
+  background-color: rgb(0, 130, 28);
+  color: white;
+  margin: 2px 1.5%;
 }
 
 .stationSuggestions {

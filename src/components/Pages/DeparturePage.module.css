@@ -1,32 +1,31 @@
 
 .stationName {
-  font-size: 35px;
-  margin: 20px 5px;
+  margin: 10px 0px 10px 2.5%;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 .availableLineContainer{
   text-align: center;
   display: flex;
-  justify-content:space-between;
-  width: 90%;
-  margin-left: 5%;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  width: 96%;
+  margin-left: 2%;
 }
 .availableLine {
-  display: flex;
-  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
   border: 1px black solid;
   cursor: pointer;
   margin: 5px;
   padding: 5px;
+  width: 45%;
+  background-color: transparent;
 }
 
 .lineButton {
   text-decoration: none;
-  border: solid 1px grey;
-  padding: 5px;
-  margin: 5px;
-  background: none;
-  font-size: 15px;
 }
 .departureContainer {
   background-color: aqua;

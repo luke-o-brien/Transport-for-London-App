@@ -1,12 +1,33 @@
 * {
   text-align: center;
+  overflow-x: hidden;
+}
+
+
+.background {
+  background-image: url("../images/signage-2653_1280.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+
+}
+
+.homeContent {
+  margin-top: 20%;
+}
+.mainTtle {
+  margin: 10px 0px 0px 2.5%;
+  font-size: 35px;
+  font-weight: 200;
 }
 .navigation_div {
   margin: 20px 5vw;
-  height: 15vh;
+  height: 10vh;
   width: 90vw;
-  background-color: #84B817;
-  border-radius: 20px;
+  /* background-color: #84B817; */
+  background-color: rgb(0, 130, 28);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,10 +35,10 @@
 }
 .navigationDivJourney {
   margin: 20px 5vw;
-  height: 15vh;
+  height: 10vh;
   width: 90vw;
-  background-color: #df64b0;
-  border-radius: 20px;
+  /* background-color: #df64b0; */
+  background-color: rgb(0, 130, 28);;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,17 +46,19 @@
 }
 .navigation_title {
   text-decoration: none;
-  color: white
+  color: white;
+  font-weight: 300;
   
 
   
 }
 .navigationDivService {
   margin: 20px 5vw;
-  height: 15vh;
+  height: 10vh;
   width: 90vw;
-  background-color: #EE7C0E;
-  border-radius: 20px;
+  /* background-color: #EE7C0E; */
+  background-color: rgb(0, 130, 28);
+
   display: flex;
   justify-content: center;
   align-items: center;

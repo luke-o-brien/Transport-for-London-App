@@ -1,34 +1,44 @@
 .name_container{
   padding: 5px 0px;
-  /* box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px; */
   text-align: right;
-  width: 90%;
-  margin: 5px 5%;
+  width: 96%;
+  margin: 5px 2%;
   padding-top: 15px;
-  border-bottom: rgb(203, 203, 203) 1px solid;
+  border-bottom: rgb(192, 192, 192) 0.5px solid;
 }
-
+.name {
+  font-weight: 100;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+}
 .resultsContainer {
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-  border-radius: 15px;
-  width: 90%;
-  margin-left: 5%;
+  width: 95%;
+  margin-left: 2.5%;
 }
 
 .startTyping {
+  text-align: left;
   font-size: 40px;
-  margin-top: 20%;
-  box-shadow: none;
+  font-weight: 100;
+  margin-top: 10%;
 }
 
 .inputField {
-  width: 70%;
-  height: 30px;
-  border-radius: 10px;
-  margin-top: 20px;
-  border: 1px black solid;
+  width: 95%;
+  border: #2B2B2C 1px solid;
+  height: 50px;
+  margin: 2px 0px;
+  padding-left: 5px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 200;
 }
 
-::placeholder {
-  padding-left: 5px;
+.inputField::placeholder {
+  text-align: left;
+  color: #2B2B2C;
+  font-size: 20px;
+  font-weight: 100;
 }
