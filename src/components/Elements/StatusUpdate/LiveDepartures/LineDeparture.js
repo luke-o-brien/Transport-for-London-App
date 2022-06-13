@@ -1,5 +1,4 @@
 import react from "react";
-import { useLocation, Link } from "react-router-dom"
 import styles from "./LineDeparture.module.css"
 
 const LineDeparture = (props) => {

@@ -2,7 +2,7 @@ import react from "react";
 import { Link } from "react-router-dom";
 import styles from "./StationSearch.module.css"
 
-function StationSearch(props) {
+function StationSearch() {
 
   const [stationdata, setStationData] = react.useState(undefined)
   const [name, setName] = react.useState("")
