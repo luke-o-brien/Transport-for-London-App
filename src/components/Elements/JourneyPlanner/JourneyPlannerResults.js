@@ -66,7 +66,7 @@ function JourneyResults(props) {
                 <div className={styles.legdetails}>
                   <p className={styles.details}>{legs.routeOptions[0].name}</p>
                   <p className={styles.details}>Towards {legs.routeOptions[0].directions}</p>
-                  <p className={styles.details}>{legs.duration} Min</p>
+                  <p className={styles.detailstime}>{legs.duration} Min</p>
                   {legs.path.stopPoints.length > 1 ? <p className={styles.stopsButton} onClick={() => showStops(pos)}>View Stops<i className={ stopsArrow ?  "fa-solid fa-angle-up" : "fa-solid fa-angle-down" }></i></p>  : null}
                   {(activeIndexStops === pos) && showStopPoints ? <div className={styles.stopsContainer}> {legs.path.stopPoints.slice(0,-1).map((stops) => {
                     return <li className={styles.stops} key={stops.name}>{stops.name}</li>
@@ -83,7 +83,7 @@ function JourneyResults(props) {
       
       </div>
     })}
-  </> : null
+  </> : <><div className={styles.loaderContainer}><div className={styles.loader}></div></div><div>loading..</div></>
 
   )
 }

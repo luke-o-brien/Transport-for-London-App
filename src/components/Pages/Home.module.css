@@ -15,12 +15,21 @@
 }
 
 .homeContent {
-  margin-top: 20%;
+  margin-top: 50px;
 }
 .mainTtle {
   margin: 10px 0px 0px 2.5%;
-  font-size: 35px;
+  font-size: 60px;
   font-weight: 200;
+}
+
+.tagline {
+  margin-top: 20px;
+
+  font-weight: 100;
+  font-size: 20px;
+  width: 90%; 
+  margin-left: 5%;
 }
 .navigation_div {
   margin: 20px 5vw;

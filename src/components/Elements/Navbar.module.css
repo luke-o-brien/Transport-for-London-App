@@ -1,16 +1,76 @@
-
-.header {
-  width: 100%;
-  text-align: center;
+.hamburgerContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 78%;
+  margin-right: 2%;
+  margin-top: 10px;
+  width: 20%;
+}
+.navbar {
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px 0px;
+  background: #383e42;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: ease-in-out 500ms;
 }
 
-.navbar {
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  50% {opacity: 0.2;}
+  100% { opacity: 0; } 
+}
+
+.navbarActive {
+  color: white;
+  height: 100vh;
+  width: 100vw;
   padding: 10px 0px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  background:#383e42;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: ease-in-out 500ms;
+  
+}
+
+.navcontent {
+  margin-top: 50px;
+  height: 80vh;
+  width: 100%;
+  animation: fadeOut 2s;
+}
+
+.navcontentActive {
+  margin-top: 50px;
+  height: 80vh;
+  width: 100%;
+  animation: fadeIn 2s;
 }
 .navbar_item {
-  color: black;
+  font-weight: 200;
+  width: 100%;
+  text-align: left;
+  font-size: 40px;
+  margin: 40px 10px;
+  display: block;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 0px 10px;
-  font-size: 10px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  25% {opacity: 0;}
+  100% { opacity: 1; }
+}
+.navbar_item :hover {
+  text-decoration: underline 0.5px;
+}
+.exititem {
+  display: flex;
+  justify-content: right;
+  margin-right: 10px;
 }

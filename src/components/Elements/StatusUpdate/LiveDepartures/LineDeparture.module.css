@@ -11,7 +11,6 @@
 
 .lineTitle {
   font-size: 30px;
-  border-bottom: 1.5px rgb( 217, 217, 217) solid;
   width: 95%;
   margin-left: 2.5%;
   padding: 10px 0px;
@@ -109,4 +108,13 @@
   margin: 20px 5vw;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.params {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-bottom: 2px rgb( 217, 217, 217) solid;
+  font-weight: 600;
 }
