@@ -30,7 +30,8 @@ const DeparturePage = () => {
   function handleClick(e) {
     
     console.log("clicked")
-    const optionText = e.target.innerHTML
+    const optionTextcase = e.target.innerHTML
+    const optionText = optionTextcase.charAt(0).toLowerCase() + optionTextcase.slice(1);
     const optionValue = e.target.value
     console.log(optionValue)
     setStationATCO(optionValue)
@@ -47,7 +48,7 @@ const DeparturePage = () => {
         {modeData.lineGroup.map((line) => {
           return line.lineIdentifier.map((linename) => {
             return linename === "bakerloo" || linename === "central" || linename === "circle" || linename === "district" || linename === "hammersmith-city" || linename === "jubilee" || linename === "metropolitan" || linename === "northern" || linename === "piccadilly" || linename === "victoria" || linename === "dlr" || linename === "overground" ? 
-              <button key={line.stationAtcoCode} className={styles.availableLine} value={line.stationAtcoCode} onClick={handleClick} >{linename}</button> 
+              <button key={line.stationAtcoCode} className={styles.availableLine} value={line.stationAtcoCode} onClick={handleClick} >{linename.charAt(0).toUpperCase() + linename.slice(1)}</button> 
               : null
           })
         })}
@@ -59,7 +60,7 @@ const DeparturePage = () => {
         <p>{modeData.lat}</p>
         <p>{modeData.lon}</p>
       </div> */}
-      <div className={styles.facilityContainer}>
+      {/* <div className={styles.facilityContainer}>
         {modeData.additionalProperties.map((things) => {
           return things.key === "Zone" || things.key === "WiFi" || things.key === "Toilets" ?
             <div className={styles.facilityItem} key={things.key} >
@@ -71,7 +72,7 @@ const DeparturePage = () => {
               </div>
             </div> : <></>
 
-        }) } </div>
+        }) } </div> */}
     </div> : <p>waiting on data</p>
   )
 }

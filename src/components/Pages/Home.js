@@ -3,8 +3,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 function Home() {
   return (
-    <div className={styles.background}>
-      <h1 className={styles.mainTtle} >London Transport Planner</h1>
+    <div>
+      <h1 className={styles.mainTtle} >Welcome!</h1>
+      <h3 className={styles.tagline}>Plan your London Journey by clicking on the links below</h3>
       <div className={styles.homeContent}>
         <Link to="/Service-updates" style={{ textDecoration: "none" }}>
           <div className={styles.navigationDivService}>
