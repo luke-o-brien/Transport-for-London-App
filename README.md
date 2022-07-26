@@ -12,12 +12,6 @@ For this project I created a multipage mobile first react app which utilized the
 * JavaScript
 * React
 
-### Project Brief (created by myself)
-
-
-### Planning and whiteboarding 
-
-Before building the project I used an excalidraw whiteboard to work out 
 
 ### Challenge One - Displaying and using API Data 
 One of the major challenges of this project was displaying and using the API data. The TFL API has multiple endpoints and many of these contain complex JSON data which required use of multiple array and object methods to access and display. A Sizable challenge with the TFL API data is that is frequently not presented in a way which is user friendly. 
