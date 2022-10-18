@@ -47,7 +47,7 @@ const DeparturePage = () => {
       <div className={styles.availableLineContainer}>
         {modeData.lineGroup.map((line) => {
           return line.lineIdentifier.map((linename) => {
-            return linename === "bakerloo" || linename === "central" || linename === "circle" || linename === "district" || linename === "hammersmith-city" || linename === "jubilee" || linename === "metropolitan" || linename === "northern" || linename === "piccadilly" || linename === "victoria" || linename === "dlr" || linename === "overground" ? 
+            return linename === "bakerloo" || linename === "central" || linename === "circle" || linename === "district" || linename === "hammersmith-city" || linename === "jubilee" || linename === "metropolitan" || linename === "northern" || linename === "piccadilly" || linename === "victoria" || linename === "dlr" || linename === "london-overground" ? 
               <button key={line.stationAtcoCode} className={styles.availableLine} value={line.stationAtcoCode} onClick={handleClick} >{linename.charAt(0).toUpperCase() + linename.slice(1)}</button> 
               : null
           })
