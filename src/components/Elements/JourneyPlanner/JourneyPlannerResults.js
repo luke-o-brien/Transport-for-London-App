@@ -49,7 +49,7 @@ function JourneyResults(props) {
         <div className={styles.ResultsDivContent}>
           <div className={styles.JourneyTimes}>
             <p>{journey.startDateTime.split("T")[1].split(":").slice(0,-1).join(":")} - {journey.arrivalDateTime.split("T")[1].split(":").slice(0,-1).join(":")}</p>
-            {(journey.duration > 60) ? <p>{Math.floor(journey.duration / 60)} hr {journey.duration % 60} mins</p> : <p> {journey.duration} min </p>}
+            {(journey.duration > 60) ? <p>{Math.floor(journey.duration / 60)} hr {journey.duration / 60} mins</p> : <p> {journey.duration} min </p>}
           </div>
           <a className={styles.routeDetailsButton} onClick={() => showRouteDetails(index)}>View Route<i className={ arrow ?  "fa-solid fa-angle-up" : "fa-solid fa-angle-down" }></i></a>
         </div>

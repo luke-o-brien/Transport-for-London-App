@@ -17,7 +17,7 @@ const LineDeparture = (props) => {
     async function getLiveDepartures() {
       if (line === null) {
         console.log("no params")
-      } else if (line === "bakerloo" || line === "central" || line === "victoria" || line === "jubilee" || line === "district" || line === "circle" || line === "metropolitan" || line === "northern" || line === "piccadilly" || line === "hammersmith-city" || line === "dlr" || line === "overground") {
+      } else if (line === "bakerloo" || line === "central" || line === "victoria" || line === "jubilee" || line === "district" || line === "circle" || line === "metropolitan" || line === "northern" || line === "piccadilly" || line === "hammersmith-city" || line === "dlr" || line === "london-overground") {
         const resp = await fetch(`https://api.tfl.gov.uk/Line/${line}/Arrivals/${station}`)
         const departureData = await resp.json()
         const departure = departureData
